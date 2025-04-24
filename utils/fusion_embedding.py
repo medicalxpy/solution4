@@ -268,9 +268,13 @@ def load_embeddings(embedding_a_path, embedding_b_path=None, gene_map_path=None)
     # 创建从gene到ensemble ID的映射
     gene_to_ensemble = dict(zip(gene_map_df['HGNC.symbol'], gene_map_df['Gene.stable.ID']))
     
-    # 加载嵌入A 
+    # 加载嵌入A (GenePT)
     with open(embedding_a_path, 'rb') as f:
         embedding_a = pickle.load(f)
+        
+    # 处理GenePT格式
+    if embedding_a_path.endswith('GenePT.pkl'):
+        embedding_a = embedding_a.T
     
     # 确保embedding_a是DataFrame格式
     if not isinstance(embedding_a, pd.DataFrame):
@@ -286,10 +290,15 @@ def load_embeddings(embedding_a_path, embedding_b_path=None, gene_map_path=None)
         ensemble_ids = [gene_to_ensemble[gene] for gene in filtered_embedding_a.index]
         embedding_a = pd.DataFrame(filtered_embedding_a.values, index=ensemble_ids)
     
-    # 如果提供了嵌入B的路径，加载嵌入B 
+    # 如果提供了嵌入B的路径，加载嵌入B (Gformer)
     if embedding_b_path is not None:
         with open(embedding_b_path, 'rb') as f:
             embedding_b = pickle.load(f)
+        
+        # 处理Gformer格式
+        if embedding_b_path.endswith('gene.pkl'):
+            embedding_b.set_index(embedding_b.columns[0], inplace=True)
+            embedding_b = embedding_b.groupby(embedding_b.index).mean()
         
         # 确保embedding_b是DataFrame格式
         if not isinstance(embedding_b, pd.DataFrame):

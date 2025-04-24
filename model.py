@@ -241,7 +241,7 @@ class CTM:
         n_samples=20,
         do_train_predictions=True,
         return_mean = True,
-        scheduler=True
+        scheduler=False
     ):
         # Print settings to output file
 

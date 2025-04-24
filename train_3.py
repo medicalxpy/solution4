@@ -12,8 +12,7 @@ from utils.cell_embedding import generate_cell_embedding
 
 adata_path="/volume1/home/pxie/data/combined_data.h5ad"
 gene_embedding_path="/volume1/home/pxie/data/embeddings/fused_gene_embedding.pkl"
-gene_embedding_path="/volume1/home/pxie/data/embeddings/GenePT.pkl"
-model_name="gpt_base"
+model_name="gpt_base_fsuion"
 cell_embeddings, gene_counts_common,_=generate_cell_embedding(
     adata_path=adata_path,
     gene_embedding_path=gene_embedding_path)
