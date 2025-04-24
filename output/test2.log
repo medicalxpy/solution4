@@ -1,0 +1,109 @@
+/volume1/home/pxie/.local/lib/python3.9/site-packages/cupy/_environment.py:437: UserWarning: 
+--------------------------------------------------------------------------------
+
+  CuPy may not function correctly because multiple CuPy packages are installed
+  in your environment:
+
+    cupy-cuda101, cupy-cuda117
+
+  Follow these steps to resolve this issue:
+
+    1. For all packages listed above, run the following command to remove all
+       existing CuPy installations:
+
+         $ pip uninstall <package_name>
+
+      If you previously installed CuPy via conda, also run the following:
+
+         $ conda uninstall cupy
+
+    2. Install the appropriate CuPy package.
+       Refer to the Installation Guide for detailed instructions.
+
+         https://docs.cupy.dev/en/stable/install.html
+
+--------------------------------------------------------------------------------
+
+  warnings.warn(f'''
+AnnData中的基因数: 36263
+基因嵌入中的基因数: 33622
+共有基因数: 22654
+AnnData中的基因数: 21563
+基因嵌入中的基因数: 33622
+共有基因数: 20599
+Settings: 
+                N Components: 50
+                Topic Prior Mean: 0.0
+                Topic Prior Variance: None
+                Model Type: prodLDA
+                Hidden Sizes: (100, 100)
+                Activation: softplus
+                Dropout: 0.2
+                Learn Priors: True
+                Learning Rate: 0.002
+                Momentum: 0.99
+                Reduce On Plateau: False
+                Save Dir: None
+0it [00:00, ?it/s]epoch: 0 loss: 4538.321948662315 best_loss: 4538.321948662315
+epoch: 1 loss: 4458.299803053672 best_loss: 4458.299803053672
+epoch: 2 loss: 4443.150639200302 best_loss: 4443.150639200302
+epoch: 3 loss: 4434.773077124163 best_loss: 4434.773077124163
+epoch: 4 loss: 4428.861479604221 best_loss: 4428.861479604221
+epoch: 5 loss: 4422.543797801147 best_loss: 4422.543797801147
+epoch: 6 loss: 4420.707982138056 best_loss: 4420.707982138056
+epoch: 7 loss: 4417.671643229789 best_loss: 4417.671643229789
+epoch: 8 loss: 4415.712266969407 best_loss: 4415.712266969407
+epoch: 9 loss: 4411.2622471767445 best_loss: 4411.2622471767445
+epoch: 10 loss: 4407.864085326915 best_loss: 4407.864085326915
+epoch: 11 loss: 4406.255392800325 best_loss: 4406.255392800325
+epoch: 12 loss: 4402.7696241448075 best_loss: 4402.7696241448075
+epoch: 13 loss: 4403.147175951168 best_loss: 4402.7696241448075
+epoch: 14 loss: 4403.266324978714 best_loss: 4402.7696241448075
+epoch: 15 loss: 4401.851979359614 best_loss: 4401.851979359614
+epoch: 16 loss: 4399.952093354147 best_loss: 4399.952093354147
+epoch: 17 loss: 4398.496623110361 best_loss: 4398.496623110361
+epoch: 18 loss: 4397.164613800341 best_loss: 4397.164613800341
+epoch: 19 loss: 4395.754169296352 best_loss: 4395.754169296352
+epoch: 20 loss: 4396.6574541314385 best_loss: 4395.754169296352
+epoch: 21 loss: 4397.80234202281 best_loss: 4395.754169296352
+epoch: 22 loss: 4394.51258841345 best_loss: 4394.51258841345
+epoch: 23 loss: 4394.111477736989 best_loss: 4394.111477736989
+epoch: 24 loss: 4394.930021734584 best_loss: 4394.111477736989
+epoch: 25 loss: 4395.746800030623 best_loss: 4394.111477736989
+epoch: 26 loss: 4396.258682630258 best_loss: 4394.111477736989
+epoch: 27 loss: 4393.772605648004 best_loss: 4393.772605648004
+epoch: 28 loss: 4394.515272093093 best_loss: 4393.772605648004
+epoch: 29 loss: 4393.73945947359 best_loss: 4393.73945947359
+epoch: 30 loss: 4393.704267045964 best_loss: 4393.704267045964
+epoch: 31 loss: 4393.138081829589 best_loss: 4393.138081829589
+epoch: 32 loss: 4393.108377197733 best_loss: 4393.108377197733
+epoch: 33 loss: 4392.312262628092 best_loss: 4392.312262628092
+epoch: 34 loss: 4392.068722084877 best_loss: 4392.068722084877
+epoch: 35 loss: 4393.562583325242 best_loss: 4392.068722084877
+epoch: 36 loss: 4393.9651807854325 best_loss: 4392.068722084877
+epoch: 37 loss: 4392.088117260322 best_loss: 4392.068722084877
+epoch: 38 loss: 4392.197552945372 best_loss: 4392.068722084877
+epoch: 39 loss: 4391.37005766947 best_loss: 4391.37005766947
+epoch: 40 loss: 4391.184535301894 best_loss: 4391.184535301894
+epoch: 41 loss: 4391.376597417244 best_loss: 4391.184535301894
+epoch: 42 loss: 4390.221788220379 best_loss: 4390.221788220379
+epoch: 43 loss: 4391.434911082397 best_loss: 4390.221788220379
+epoch: 44 loss: 4392.255273530862 best_loss: 4390.221788220379
+epoch: 45 loss: 4390.773518257797 best_loss: 4390.221788220379
+epoch: 46 loss: 4390.496488903038 best_loss: 4390.221788220379
+epoch: 47 loss: 4390.257839108061 best_loss: 4390.221788220379
+epoch: 48 loss: 4390.508786961864 best_loss: 4390.221788220379
+epoch: 49 loss: 4390.408383779726 best_loss: 4390.221788220379
+epoch: 50 loss: 4389.954082423369 best_loss: 4389.954082423369
+epoch: 51 loss: 4389.745544083487 best_loss: 4389.745544083487
+epoch: 52 loss: 4391.840464137937 best_loss: 4389.745544083487
+epoch: 53 loss: 4390.702657725114 best_loss: 4389.745544083487
+epoch: 54 loss: 4391.910753530937 best_loss: 4389.745544083487
+epoch: 55 loss: 4391.058383919769 best_loss: 4389.745544083487
+epoch: 56 loss: 4389.859419113363 best_loss: 4389.745544083487
+epoch: 57 loss: 4389.7845610697 best_loss: 4389.745544083487
+epoch: 58 loss: 4388.989891037659 best_loss: 4388.989891037659
+epoch: 59 loss: 4391.932310727996 best_loss: 4388.989891037659
+epoch: 60 loss: 4389.3307647996835 best_loss: 4388.989891037659
+epoch: 61 loss: 4389.207200934737 best_loss: 4388.989891037659
+epoch: 62 loss: 4389.40212014893 best_loss: 4388.989891037659
